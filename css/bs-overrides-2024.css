@@ -1,0 +1,54 @@
+/* -- original CSS overrides -- */
+
+/* newsletter padding */
+.newsletter-form-footnote {
+  display: none;
+}
+div#block-yui_3_17_2_1_1641498071156_8910 {
+  padding-top: 0px !important;
+}
+
+div#Index-page-content { padding-top: 0px !important; }
+
+/* -- end original CSS overrides -- */
+
+
+/* newsletter subscribe box */
+
+#subscribe {
+  background-color: #40547b;
+  color: #fff;
+  padding: 1em;
+  font-size: clamp(1em, 150%, 1.2em);
+  background-image: url(https://images.squarespace-cdn.com/content/5bf9a31c96d4550b42f456f2/22fb3d65-1f65-4db8-b8cc-29d8686c8304/bs-live-dw-halftone-med-crop-40547b.jpg?content-type=image%2Fjpeg);
+  background-size: cover;
+}
+
+#subscribe > div,
+#subscribe div.newsletter-form-body {
+  padding: 0 !important;
+}
+
+#subscribe h1 {
+  color: white;
+}
+
+#subscribe input,
+#subscribe button {
+  font-size: inherit;
+  border-radius: 2em;
+}
+
+#subscribe button {
+  background-color: #fb654f;
+  color: white;
+  font-weight: bold;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#subscribe input::placeholder {
+  color: black;
+}
+
+/* end newsletter subscribe box */
