@@ -52,3 +52,56 @@ div#Index-page-content { padding-top: 0px !important; }
 }
 
 /* end newsletter subscribe box */
+
+/* start blog overrides */
+
+.BlogList {
+  max-inline-size: 100ch;
+}
+
+/* end blog overrides */
+
+/* Latest (linktree) page, requires JS added to page. NOTE: these color styles are filter:invert()-ed. */
+
+body.bs-linktree {
+  & .Mobile-bar.Mobile-bar--top,
+  & .Site-inner {
+    filter: invert();
+  }
+  
+  & .sqs-block-button-element--medium.sqs-button-element--primary.sqs-block-button-element {
+    color: black;
+    border-radius: 20px !important;
+    width: 60vw;
+    background-color: lightgreen;
+    border: 0;
+  }
+  
+  & .newsletter-block .newsletter-form-field-element {
+    color: #fff;
+    background-color: #000;
+  }
+  & .newsletter-block .newsletter-form-field-element::placeholder {
+    color: #fff;
+  }
+}
+
+/* Home page header */
+body.bs-home {
+  header {
+    background: black;
+  }
+  & .Header-nav .Header-nav-item {
+    color: #666666;
+  }
+  & .Header-branding {
+    color: white;
+  }
+}
+
+.tweak-social-icons-style-regular .SocialLinks-link-icon {
+  fill: #666;
+}
+.tweak-social-icons-style-regular .SocialLinks:hover .SocialLinks-link:hover .SocialLinks-link-icon {
+  fill: #fff;
+}
