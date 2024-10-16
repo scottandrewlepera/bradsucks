@@ -12,10 +12,7 @@
 
   #outer {
     --bsp-bgcolor: #744493;
-    --bsp-fgcolor: rgba(79,226,224,1);
-    /* --bsp-fgcolor: #f793cb; */
-    /* background: linear-gradient(90deg, rgba(116,68,147,1) 0%, rgba(72,97,149,1) 100%); */
-    background: linear-gradient(90deg, rgba(116,68,147,1) 30%, rgba(79,226,224,1) 100%);
+    background-color: var(--bsp-bgcolor);
   }
 
   bradsucks-player {
@@ -24,7 +21,7 @@
     --button-width: calc(100cqi / 5);
     --label-font-size: calc(100cqi / 16);
     padding: 1em;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
 
@@ -37,27 +34,27 @@
     }
 
     & bradsucks-logo {
-      fill: rgba(79,226,224,1);
+      fill: #f793cb;
       max-inline-size: 100cqi;
       display: contents;
     }
 
     & .sa-button-play {
       --sa-play-icon: #eee8aa;
-      --sa-play-circle: var(--bsp-fgcolor);
+      --sa-play-circle: #f793cb;
       --sa-play-outline: var(--bsp-bgcolor);
     }
 
     & .sa-button-pause {
       --sa-pause-icon: #eee8aa;
-      --sa-pause-circle: var(--bsp-fgcolor);
-      --sa-pause-outline: var(--bsp-bgcolor);
+      --sa-pause-circle: #f793cb;
+      --sa-pause-outline: #744493;
       display: none;
     }
 
     & .sa-button-skip {
       --sa-skip-icon: #eee8aa;
-      --sa-skip-circle: var(--bsp-fgcolor);
+      --sa-skip-circle: #f793cb;
       --sa-skip-outline: var(--bsp-bgcolor);
     }
 
@@ -91,10 +88,20 @@
     }
   }
 
+  #bradsucks-playing {
+    display: inline-block;
+  }
+  #bradsucks-playing img {
+    filter: sepia(19%) saturate(2007%) hue-rotate(234deg);
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+
   /* match to Squarespace mobile breakpoint */
   @media (width > 640px) {
     bradsucks-player {
-      width: 400px;
+      width: 500px;
     }
   }
 
@@ -120,6 +127,9 @@
       <span class="track-label"></span>
     </div>
   </bradsucks-player>
+  <div id="bradsucks-playing">
+    <img src="./img/bradsucks-playing-pixelart-low-12s.gif" />
+  </div>
 </div>
 </body>
 </html>
