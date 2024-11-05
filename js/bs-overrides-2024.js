@@ -6,3 +6,6 @@ To apply, open the page in the SQS editor, then use Settings > Advanced > Inject
 // Latest (linktree)
 document.addEventListener("DOMContentLoaded", (event) => {document.body.classList.add("bs-linktree");});
 
+// subscribe page
+document.addEventListener("DOMContentLoaded", (event) => {document.body.classList.add("bs-subscribe");});
+

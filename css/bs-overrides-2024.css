@@ -12,7 +12,6 @@ div#Index-page-content { padding-top: 0px !important; }
 
 /* -- end original CSS overrides -- */
 
-
 /* newsletter subscribe box */
 
 #subscribe {
@@ -21,6 +20,7 @@ div#Index-page-content { padding-top: 0px !important; }
   padding: 1em;
   font-size: clamp(1em, 150%, 1.2em);
   background-image: url(https://images.squarespace-cdn.com/content/5bf9a31c96d4550b42f456f2/22fb3d65-1f65-4db8-b8cc-29d8686c8304/bs-live-dw-halftone-med-crop-40547b.jpg?content-type=image%2Fjpeg);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -63,45 +63,42 @@ div#Index-page-content { padding-top: 0px !important; }
 
 /* Latest (linktree) page, requires JS added to page. NOTE: these color styles are filter:invert()-ed. */
 
+body.bs-linktree main {
+  background: #0e769a;
+  background-image: url(https://images.squarespace-cdn.com/content/5bf9a31c96d4550b42f456f2/22fb3d65-1f65-4db8-b8cc-29d8686c8304/bs-live-dw-halftone-med-crop-40547b.jpg?content-type=image%2Fjpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 body.bs-linktree {
-  & .Mobile-bar.Mobile-bar--top,
-  & .Site-inner {
-    filter: invert();
+  & .sqs-block-content,
+  & .newsletter-block * {
+    color: white !important;
+  }
+  
+  & nav svg {
+    filter: invert() brightness(2);
   }
   
   & .sqs-block-button-element--medium.sqs-button-element--primary.sqs-block-button-element {
-    color: black;
+    color: #fff;
     border-radius: 20px !important;
-    width: 60vw;
-    background-color: lightgreen;
+    width: 70vw;
+    background-color: #fb654f;
     border: 0;
   }
   
+  & .newsletter-form-button.sqs-system-button.sqs-editable-button-layout.sqs-editable-button-style.sqs-editable-button-shape.sqs-button-element--primary {
+  background: #fb654f;
+    box-shadow: none;
+	border: 1px solid white !important;
+}
   & .newsletter-block .newsletter-form-field-element {
-    color: #fff;
-    background-color: #000;
+    background-color: black;
+    border: 1px solid white;
   }
   & .newsletter-block .newsletter-form-field-element::placeholder {
-    color: #fff;
-  }
-}
-
-/* Home page header */
-body.bs-home {
-  header {
-    background: black;
-  }
-  & .Header-nav .Header-nav-item {
-    color: #666666;
-  }
-  & .Header-branding {
     color: white;
   }
-}
-
-.tweak-social-icons-style-regular .SocialLinks-link-icon {
-  fill: #666;
-}
-.tweak-social-icons-style-regular .SocialLinks:hover .SocialLinks-link:hover .SocialLinks-link-icon {
-  fill: #fff;
 }
