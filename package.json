@@ -1,0 +1,13 @@
+{
+  "name": "bradsucks-player",
+  "version": "1.0.0",
+  "description": "Web audio player app for bradsucks.net",
+  "scripts": {
+    "build": "minify js/bradsucks-player.js > dist/bradsucks-player.min.js; minify css/bradsucks-player.css > dist/bradsucks-player.min.css"
+  },
+  "author": "Scott Andrew LePera",
+  "license": "ISC",
+  "devDependencies": {
+    "minify": "11.4.1"
+  }
+}
