@@ -171,6 +171,7 @@ bradsucks-player-core .progress {
   }
 }
 
+/* specific to Squarespace layout */
 section:has(bradsucks-player-core) {
   padding: 0 !important;
 }
