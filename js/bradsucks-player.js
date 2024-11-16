@@ -210,7 +210,7 @@ class BradSucksPlayerCore extends HTMLElement {
   update() {
     const track = this.trackList[this.currentTrackNumber];
     this.audio.src = track.url;
-    this.trackLabel.innerHTML = track.title;
+    this.trackLabel.innerHTML = `<a target="_new" href="${track.albumUrl}">${track.title}</a>`;
     this.progress.style.setProperty('width', '0');
   }
 }

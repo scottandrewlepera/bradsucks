@@ -33,6 +33,47 @@ bradsucks-player-core {
   container-type: inline-size;
   padding: max(1em, 20px);
   display: flex;
+
+
+  & .bsp-controls {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  & button {
+    appearance: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    inline-size: var(--bsp-button-width);
+    padding: 0;
+    flex-shrink: 0;
+  }
+  
+  & button:hover {
+    filter:brightness(1.2);
+  }
+  
+  & .track-label {
+    color: var(--bsp-hlcolor);
+    font-family: var(--bsp-track-label-font);
+    font-size: var(--bsp-label-font-size);
+    line-height: normal;
+    margin-left: 1em;
+    max-width: 40%;
+
+    & a:link,
+    & a:visited,
+    & a:active {
+      color: var(--bsp-hlcolor);
+    }
+  }
   
   &.bsp-playing .player-button-pause {
     display: inline;
@@ -66,42 +107,6 @@ bradsucks-player-core {
     --sa-skip-icon: var(--bsp-hlcolor);;
     --sa-skip-circle: var(--bsp-fgcolor);
     --sa-skip-outline: var(--bsp-bgcolor);
-  }
-}
-
-bradsucks-player-core  {
-  & .bsp-controls {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1em;
-    
-    & > div {
-      display: flex;
-      align-items: center;
-    }
-  }
-  
-  & button {
-    appearance: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    inline-size: var(--bsp-button-width);
-    padding: 0;
-    flex-shrink: 0;
-  }
-  
-  & button:hover {
-    filter:brightness(1.2);
-  }
-  
-  & .track-label {
-    color: var(--bsp-hlcolor);;
-    font-family: var(--bsp-track-label-font);
-    font-size: var(--bsp-label-font-size);
-    line-height: normal;
-    margin-left: 1em;
-    max-width: 40%;
   }
 }
 
