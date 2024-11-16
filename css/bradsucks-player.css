@@ -6,7 +6,7 @@
     --bsp-bgcolor: #744493;
     --bsp-fgcolor: #4fe2e0;
     --bsp-hlcolor: #eee8aa;
-    --bsp-logo-fill-color: rgba(79,226,224,1);
+    --bsp-logo-fill-color: #4fe2e0;
     --bsp-track-label-font: 'Bowlby One SC', sans-serif;
     --bsp-image-colorization-filters: invert(0%) sepia(66%) saturate(2129%) hue-rotate(140deg) brightness(93%) contrast(90%);
     /* Colorization filters generator: https://codepen.io/sosuke/pen/Pjoqqp*/
