@@ -2,8 +2,8 @@
 
 This repo contains work done for the Brad Sucks website at https://bradsucks.net, including:
 
-* Style overrides
-* Audio player
+* Style overrides for the SquareSpace theme
+* Audio player component
 
 ## Style Overrides
 
@@ -12,23 +12,25 @@ Style overrides include CSS and JavaScript that are injected both globally and i
 Some of these override files reference images that were uploaded as site assets. Copies of these images can be found in the `/img` directory.
 
 ### Override files
-* `/site/bs-overrides-2024.css` - CSS overrides that are applied globally.
-* `/site/bs-overrides-2024.js` - A file that contains JavaScript code to be applied only to specific pages.
+|File|Description|
+|-|-|
+|`/site/bs-overrides-2024.css`|CSS overrides that are applied globally.|
+|`/site/bs-overrides-2024.js`|A file that contains JavaScript code to be applied only to specific pages.|
 
-#### Applying the CSS overrides
+### Applying the CSS overrides
 
 * Under **Website**, go to **Pages > Website Tools > Custom CSS**
 * Paste the content of `/site/bs-overrides-2024.css` into the text box on the left hand side.
 * Click **Save** in the top right corner.
 
-#### Applying the JavaScript overrides
+### Applying the JavaScript overrides
 
 These JS fragments inject custom class names into specific pages so they can be targeted by the custom style rules. *Do not inject these globally* or the pages may break. The specific pages are listed in the JS file itself.
 
 To apply, 
 
 * Under **Website** go to **Pages** and click the page to open it in the SquareSpace editor. the page in the SQS editor
-* click the gear icon to the right of the page name to open the **Settings** dialog
+* click the gear icon ⛭ to the right of the page name to open the **Settings** dialog
 * In the dialog, go to** Advanced**
 * Add an empty `<script></script>` tag to the "Page Header Code Injection" box.
 * Paste the relevant code from the JS file into the tag.
@@ -47,7 +49,7 @@ To add the player to a page:
 * Under **Website**, go to **Pages** and click the page you want to the audio player to
 * Hover over the top of the page to display the **Page Content** tooltip
 * Click **Edit**
-* Click the ➕ on the right hand side to open the *Add New Block* menu
+* Click the plus icon ➕ on the right hand side to open the *Add New Block* menu
 * Select **Code**. An editor window should pop open
 * Set the **Mode** to "HTML" if not already set
 * Copy and paste the content of `/demo/index.html` into the editor:
@@ -116,9 +118,11 @@ To generate a new filter chain for image colorization, try using the tool here: 
 
 Updates to the core CSS and JS files hosted at statically.io can only be made through this repo. Your options are:
 
-* File an issue
-* File a pull request
-* Fork the repo and host your changes elsewhere
+1. File an issue
+2. File a pull request
+3. Fork the repo and host your changes elsewhere
+
+Options 1 and 2 will create a new versioned URL for the CSS and JS. You will need to update the audio player code on your site with the new URLs.
 
 ## Need help?
 
