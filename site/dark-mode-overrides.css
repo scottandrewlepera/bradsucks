@@ -60,16 +60,17 @@ div.bg.bar {
   background-color: rgba(255,255,255,0.3) !important;
 }
 
-/* clamp news summary */
-.summary-excerpt p {
-   display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
+header.Header--top {
+  border-bottom-color: rgba(255,255,255,0.2);
+  background-color: rgba(16, 23, 32,0.9) !important;
 }
 
-
-/* fix top margin on homepage news section */
-#latest-news {
-  margin-top: 2em;
+/* releases page figcaptions */
+#collection-5c0036d4758d463c79e71c93 {
+  & figcaption {
+    background-color: rgba(255,255,255,0.1);
+    & * {
+      color: white !important;
+    }
+  }
 }
