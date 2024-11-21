@@ -12,6 +12,18 @@ div#Index-page-content { padding-top: 0px !important; }
 
 /* -- end original CSS overrides -- */
 
+/* fix top margin on homepage news section */
+#latest-news {
+  margin-top: 2em;
+}
+
+/* make nav sticky */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+}
+
 /* newsletter subscribe box */
 
 #subscribe {
@@ -57,6 +69,13 @@ div#Index-page-content { padding-top: 0px !important; }
 
 .BlogList {
   max-inline-size: 100ch;
+}
+
+.summary-excerpt p {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
 /* end blog overrides */
