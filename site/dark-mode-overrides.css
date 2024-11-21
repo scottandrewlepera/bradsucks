@@ -1,0 +1,75 @@
+body,
+header,
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+.BlogList-item-title,
+.Blog-meta-item,
+/* audio player tracklist */
+li.track *,
+/* Shop breadcrumb links */
+.ProductItem-nav-breadcrumb-link,
+/* navigation links */
+.Header-nav .Header-nav-item,
+/* footer links */
+.Footer-nav-item,
+.ProductList-filter-list-item-link
+{
+  color: white !important;
+}
+
+body,
+header,
+section,
+footer,
+.Mobile-bar
+{
+  background-color: #101720 !important;
+}
+
+.Index-gallery-item-content * {
+  color: black !important;
+}
+
+/* upper-left branding (logo) */
+.Header-branding,
+.Mobile-bar-branding,
+.Mobile-bar-menu svg,
+.Mobile-overlay
+{
+  filter: invert();
+}
+
+/* upper-right social icons */
+.SocialLinks-link-icon
+{
+  fill: white !important;
+}
+
+/* Gallery in-content CTA buttons */
+
+.Index-gallery-item-content {
+  border: 1px solid white;
+}
+
+/* album page track separator lines */
+div.bg.bar {
+  background-color: rgba(255,255,255,0.3) !important;
+}
+
+/* clamp news summary */
+.summary-excerpt p {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+
+/* fix top margin on homepage news section */
+#latest-news {
+  margin-top: 2em;
+}
