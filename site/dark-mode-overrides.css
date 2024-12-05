@@ -1,76 +1,79 @@
-body,
-header,
-section,
-h1,
-h2,
-h3,
-h4,
-h5,
-.BlogList-item-title,
-.Blog-meta-item,
-/* audio player tracklist */
-li.track *,
-/* Shop breadcrumb links */
-.ProductItem-nav-breadcrumb-link,
-/* navigation links */
-.Header-nav .Header-nav-item,
-/* footer links */
-.Footer-nav-item,
-.ProductList-filter-list-item-link
-{
-  color: white !important;
-}
+@media (prefers-color-scheme: dark) {
 
-body,
-header,
-section,
-footer,
-.Mobile-bar
-{
-  background-color: #101720 !important;
-}
+  body,
+  header,
+  section,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .BlogList-item-title,
+  .Blog-meta-item,
+  /* audio player tracklist */
+  li.track *,
+  /* Shop breadcrumb links */
+  .ProductItem-nav-breadcrumb-link,
+  /* navigation links */
+  .Header-nav .Header-nav-item,
+  /* footer links */
+  .Footer-nav-item,
+  .ProductList-filter-list-item-link
+  {
+    color: white !important;
+  }
 
-.Index-gallery-item-content * {
-  color: black !important;
-}
+  body,
+  header,
+  section,
+  footer,
+  .Mobile-bar
+  {
+    background-color: #101720 !important;
+  }
 
-/* upper-left branding (logo) */
-.Header-branding,
-.Mobile-bar-branding,
-.Mobile-bar-menu svg,
-.Mobile-overlay
-{
-  filter: invert();
-}
+  .Index-gallery-item-content * {
+    color: black !important;
+  }
 
-/* upper-right social icons */
-.SocialLinks-link-icon
-{
-  fill: white !important;
-}
+  /* upper-left branding (logo) */
+  .Header-branding,
+  .Mobile-bar-branding,
+  .Mobile-bar-menu svg,
+  .Mobile-overlay
+  {
+    filter: invert();
+  }
 
-/* Gallery in-content CTA buttons */
+  /* upper-right social icons */
+  .SocialLinks-link-icon
+  {
+    fill: white !important;
+  }
 
-.Index-gallery-item-content {
-  border: 1px solid white;
-}
+  /* Gallery in-content CTA buttons */
 
-/* album page track separator lines */
-div.bg.bar {
-  background-color: rgba(255,255,255,0.3) !important;
-}
+  .Index-gallery-item-content {
+    border: 1px solid white;
+  }
 
-header.Header--top {
-  border-bottom-color: rgba(255,255,255,0.2);
-  background-color: rgba(16, 23, 32,0.9) !important;
-}
+  /* album page track separator lines */
+  div.bg.bar {
+    background-color: rgba(255,255,255,0.3) !important;
+  }
 
-/* releases page figcaptions */
-#collection-5c0036d4758d463c79e71c93 {
-  & figcaption {
-    background-color: rgba(255,255,255,0.1);
-    & * {
-      color: white !important;
+  header.Header--top {
+    border-bottom-color: rgba(255,255,255,0.2);
+    background-color: rgba(16, 23, 32,0.9) !important;
+  }
+
+  /* releases page figcaptions */
+  #collection-5c0036d4758d463c79e71c93 {
+    & figcaption {
+      background-color: rgba(255,255,255,0.1);
+      & * {
+        color: white !important;
+      }
     }
   }
 }
