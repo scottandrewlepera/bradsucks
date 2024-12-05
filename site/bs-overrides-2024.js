@@ -9,3 +9,6 @@ document.addEventListener("DOMContentLoaded", (event) => {document.body.classLis
 // subscribe page
 document.addEventListener("DOMContentLoaded", (event) => {document.body.classList.add("bs-subscribe");});
 
+// Home page
+document.addEventListener("DOMContentLoaded", (event) => {document.body.classList.add("bs-home");});
+
