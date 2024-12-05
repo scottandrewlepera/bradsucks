@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Web audio player app for bradsucks.net",
   "scripts": {
-    "build": "minify js/bradsucks-player.js > dist/bradsucks-player.min.js; lightningcss --minify css/bradsucks-player.css -o dist/bradsucks-player.min.css"
+    "build": "minify js/bradsucks-player.js > dist/bradsucks-player.min.js; lightningcss --minify css/bradsucks-player.css -o dist/bradsucks-player.min.css; lightningcss --minify site/dark-mode-overrides.css -o dist/bradsucks-dark-mode-overrides.min.css"
   },
   "author": "Scott Andrew LePera",
   "license": "ISC",
