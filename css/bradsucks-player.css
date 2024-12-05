@@ -33,6 +33,7 @@ bradsucks-player-core {
   container-type: inline-size;
   padding: max(1em, 20px);
   display: flex;
+  position: relative;
 
 
   & .bsp-controls {
