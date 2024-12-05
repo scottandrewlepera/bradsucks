@@ -112,7 +112,7 @@ Below are the current default values. Copy this code into the Code block that co
 </style>
 ```
 
-To generate a new filter chain for image colorization, try using the tool here: https://codepen.io/sosuke/pen/Pjoqqp*/
+To generate a new filter chain for image colorization, try using the tool here: https://codepen.io/sosuke/pen/Pjoqqp/
 
 ## Updates
 
