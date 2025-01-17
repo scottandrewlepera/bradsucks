@@ -32,6 +32,11 @@
     background-color: #101720 !important;
   }
 
+  /* reset SQS block editor dropdown */
+  .fs-unmask, .fs-unmask section {
+    background-color: initial !important;
+  }
+
   .Index-gallery-item-content * {
     color: black !important;
   }
@@ -75,5 +80,12 @@
         color: white !important;
       }
     }
+  }
+
+  /* release page text */
+  .ProductItem-details-excerpt,
+  .product-quantity-input,
+  .quantity-label {
+    color: white !important;;
   }
 }
