@@ -1,8 +1,9 @@
-*Last updated: 2024-11-16*
+*Last updated: 2025-01-16*
 
 This repo contains work done for the Brad Sucks website at https://bradsucks.net, including:
 
 * Style overrides for the SquareSpace theme
+* Dark mode overrides
 * Audio player component
 
 ## Style Overrides
@@ -31,10 +32,30 @@ To apply,
 
 * Under **Website** go to **Pages** and click the page to open it in the SquareSpace editor. the page in the SQS editor
 * click the gear icon ⛭ to the right of the page name to open the **Settings** dialog
-* In the dialog, go to** Advanced**
+* In the dialog, go to **Advanced**
 * Add an empty `<script></script>` tag to the "Page Header Code Injection" box.
 * Paste the relevant code from the JS file into the tag.
 * Click **Save**
+
+## Dark mode overrides
+
+Dark mode is achieved by injecting a CSS file with JavaScript. This is needed to prevent dark mode from being applied to the Squarespace editor.
+
+NOTE: Dark mode is only visible if the user has their system set to display it.
+
+|File|Description|
+|-|-|
+|`/site/dark-mode-overrides.css`|CSS overrides for dark mode that are applied globally.|
+|`/site/dark-mode-injection.js`|A file that contains JavaScript code that injects the dark mode CSS.|
+
+### Applying the dark mode overrides
+
+* Under **Website**, go to **Pages > Website Tools > Code Injection**
+* Add an empty `<script></script>` tag to the "Footer" box on the left hand side.
+* Paste the content of `/site/dark-mode-injection.js` into the tag.
+* Click **Save** in the top right corner.
+
+To disable dark mode, remove or comment out this JS code.
 
 ## Audio player
 
